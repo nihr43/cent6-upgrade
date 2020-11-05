@@ -5,6 +5,6 @@ RUN rm -rf /etc/yum.repos.d/*
 
 COPY cent7.repo /etc/yum.repos.d/cent7.repo
 RUN yum clean all
-RUN yum update -y
+RUN yum update -y --skip-broken
 
-RUN cat /etc/etc/redhat-release
+RUN cat /etc/redhat-release
